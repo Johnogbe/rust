@@ -1,3 +1,4 @@
+// Calculator works well but the logic can be greatly improved i will work on it again
 use std::io;
 fn choice()->String{
     
