@@ -15,7 +15,7 @@ fn main() -> Result<(),Box<dyn std::error::Error>>{
      
      let word = fs::read_to_string("data.json")?;
     loop {
-        println!("Search another word/t");
+        println!("Search another word. Exit to cancel");
         let mut search = String::new();
        
         io::stdin().read_line(&mut search).expect("Could not read input");
