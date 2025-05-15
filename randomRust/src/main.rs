@@ -12,7 +12,7 @@ fn main() {
     let rand_u8: u8 = rng.r#gen();
     let rand_range: u8 = rng.gen_range(1..=10);
     let mut count = 0;
-    let mut err_mes : &str= "Guess the correct number from 1 to 10";
+    let mut err_mes:String = String::from("Guess the correct number from 1 to 10");
     loop{
         println!("{}", err_mes);
         let mut answer = String::new();
@@ -30,7 +30,7 @@ fn main() {
             return;
         }else{
             count +=1;
-            err_mes = "Try again";
+            err_mes = format!("Try again. {} chance left",3-count);
             if count == 3{
                 println!("you failed");
                 println!("The answer is:{}",rand_range);
