@@ -10,9 +10,11 @@ fn main() {
     // println!("Shuffled items: {:?}", items);
     let mut rng = rand::thread_rng();
     let rand_u8: u8 = rng.r#gen();
+    let rand_range: u8 = rng.gen_range(1..=10);
     let mut count = 0;
+    let mut err_mes : &str= "Guess the correct number from 1 to 10";
     loop{
-        println!("guess");
+        println!("{}", err_mes);
         let mut answer = String::new();
         io::stdin().read_line( &mut answer).expect("failed");
         let answer :f32 = match answer.trim().parse(){
@@ -23,14 +25,15 @@ fn main() {
             }
         };
 
-        if answer == rand_u8 as f32{
+        if answer == rand_range as f32{
             println!("wow you guessed correcrly");
             return;
         }else{
             count +=1;
+            err_mes = "Try again";
             if count == 3{
                 println!("you failed");
-                println!("The answer is:{}",rand_u8);
+                println!("The answer is:{}",rand_range);
 
                 return;
             }
