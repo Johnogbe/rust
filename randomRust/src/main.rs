@@ -26,7 +26,7 @@ fn main() {
         };
 
         if answer == rand_range as f32{
-            println!("wow you guessed correcrly");
+            println!("wow you guessed correctly");
             return;
         }else{
             count +=1;
