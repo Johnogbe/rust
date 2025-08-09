@@ -143,7 +143,7 @@ fn main() {
             scores: score9,
         },
         StudentRecord {
-            name: String::from("Joses"),
+            name: String::from("Jose"),
             mat_no: String::from("010"),
             scores: score10,
         },
