@@ -3,7 +3,7 @@ use rand::seq::SliceRandom;
 use rand::Rng;
 
 fn main() {
-    // let mut items = vec![1, 2, 3, 4, 5];
+    // let mut items = vec![1, 2, 3, 4, 5,6];
     // let mut rng = rand::thread_rng();
 
     // items.shuffle(&mut rng);
