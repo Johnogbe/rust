@@ -56,7 +56,7 @@ fn main() -> Result<(),Box<dyn std::error::Error>>{
 // fn input()->String{
 //      let mut search = String::new();
        
-//      io::stdin().read_line(&mut search).expect("Could not read input");
+//      io::stdin().read_line(&mut search).expect("Could not read input.");
 //      let search = search.trim();
 //      if search == "EXIT" {
 //         //    return Err("exit".into());
